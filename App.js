@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
+import Blink from './Blink';
 
 class Greeting extends Component {
   render() {
@@ -23,6 +24,7 @@ export default class App extends React.Component {
         <Image source={pic} style={{width: 193, height: 110}}/>
         <Greeting name='Ethan'/>
         <Greeting name='Nguyen'/>
+        <Blink text='Ethan Nguyen'/>
       </View>
     );
   }
